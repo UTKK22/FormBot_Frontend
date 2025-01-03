@@ -48,7 +48,7 @@ const workspaceSlice = createSlice({
     },
     setTheme: (state, action) => {
       state.theme= action.payload;
-      state.formDetails.background = action.payload; // Set theme
+      state.formDetails.background = action.payload; 
     }
   },
 });
