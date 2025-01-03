@@ -94,7 +94,7 @@ const UserWorkspacePage = () => {
     try {
       const token = localStorage.getItem("token");
       const response = await fetch(
-        "http://localhost:3000/workspaces/share/email",
+        "https://formbot-backend-d49u.onrender.com/workspaces/share/email",
         {
           method: "POST",
           headers: {
@@ -123,7 +123,7 @@ const UserWorkspacePage = () => {
       const token = localStorage.getItem("token");
       
       const response = await fetch(
-        "http://localhost:3000/workspaces/share/link",
+        "https://formbot-backend-d49u.onrender.com/workspaces/share/link",
         {
           method: "POST",
           headers: {
@@ -148,7 +148,7 @@ const UserWorkspacePage = () => {
 
   const fetchWorkspaces = async () => {
     try {
-      const response = await fetch("http://localhost:3000/workspaces", {
+      const response = await fetch("https://formbot-backend-d49u.onrender.com/workspaces", {
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${localStorage.getItem("token")}`,
