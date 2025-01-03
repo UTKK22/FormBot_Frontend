@@ -26,13 +26,15 @@ body, html {
   border-bottom: 1px solid rgba(255, 255, 255, 0.16);
   background: #18181B;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   padding: 5px 0 5px 40px;
+  margin: 0;
 }
 .button_container {
     display: flex;
     justify-content: center;
+    margin-right: 20%;
   }
   
   .button {
@@ -50,7 +52,7 @@ body, html {
     justify-content: center;
     align-items: center;
     border-radius: 6px;
-    margin-left: 40%;
+
   }
   
   /* .button div:focus, .button div:active {
