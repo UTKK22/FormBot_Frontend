@@ -16,7 +16,6 @@ import SettingWorkspace from './pages/SettingWokspace';
 import FormWorkspace from './pages/FormWorkspace';
 import BotScreen from './components/BotScreen';
 import Analytics from './pages/Analytics';
-import { Theme } from './pages/Theme';
 
 function App() {
   
@@ -34,7 +33,6 @@ function App() {
         <Route path="/forms/public/:shareableLink" element={<BotScreen />} />
         <Route path="/forms/public/:id" element={<BotScreen/>} /> 
         <Route path="/analytics/:shareableLink" element={<Analytics/>} />
-        <Route path="/theme/:id" element={<Theme />} /> 
       </Routes>
     </BrowserRouter>
   );
