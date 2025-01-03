@@ -276,7 +276,10 @@ const UserWorkspacePage = () => {
             >
               Log Out
             </div>
-            <div>
+            <div
+            className={`${styles.dropdownItem} ${
+              isDarkMode ? "" : styles.bglight
+            } ${styles.logout}`}>
               {workspaces.map((item) => (
                 <div
                   onClick={() => handleWorkspaceSelect(item.workspaceId)}
