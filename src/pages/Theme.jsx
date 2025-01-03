@@ -62,7 +62,7 @@ export const Theme = () => {
   const handleThemeChange = async (theme) => {
     dispatch(setTheme(theme));
     const updatedFormDetails = { ...formDetails, background: theme };
-    console.log(formDetails)
+    // console.log(formDetails)
     handleUpdate(updatedFormDetails, fields, folderId, setFormId, formId, dispatch);
   };
  

@@ -16,8 +16,8 @@ const getConfig = () => {
 export const handleUpdate = async (formDetails, fields, folderId, setFormId, formId, dispatch) => {
   try {
     const config = getConfig();
-    console.log(formDetails)
-    console.log(formId)
+    // console.log(formDetails)
+    // console.log(formId)
     if(formDetails._id){
       const response = await axios.put(`${API_URL}/${formDetails._id}`, {
         title: formDetails.title,
@@ -35,7 +35,7 @@ export const handleUpdate = async (formDetails, fields, folderId, setFormId, for
         background: formDetails.background,
         folder: folderId,
       }, config);
-      console.log(response_form)
+      // console.log(response_form)
       setFormId(response_form.data.formId);
       dispatch(setFormDetails(response_form.data));
     }

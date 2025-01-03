@@ -81,15 +81,12 @@ function RegisterPage() {
           password: formData.password,
         });
 
-        console.log('Register response:', response);
 
         if (response.status === 201) {
           const loginResponse = await loginUser({
             email: formData.email,
             password: formData.password,
           });
-
-          console.log('Login response:', loginResponse);
 
           if (loginResponse.status === 200) {
             const { token, email } = loginResponse.data;
@@ -99,7 +96,6 @@ function RegisterPage() {
            
             dispatch(setIsAuthenticated(true));
 
-            console.log('Current User:', { email, password: formData.password });
 
             toast.success("Registration successful!");
             navigate('/login');
@@ -118,7 +114,7 @@ function RegisterPage() {
           if (error.message === 'User already exists, please use another email address') {
             setErrors({ ...errors, form: "This email is already registered." });
             toast.error("This email is already registered.");
-            console.log("User already exists (catch block - message)");
+            // console.log("User already exists (catch block - message)");
           } else {
             setErrors({ ...errors, form: "An error occurred. Please try again later." });
             toast.error("An error occurred. Please try again later.");

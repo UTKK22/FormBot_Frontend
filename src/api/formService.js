@@ -37,7 +37,6 @@ export const shareFormToServer = async (formData) => {
 export const getFormData = async (shareableLink) => {
   try {
     const response = await axios.get(`${API_URL}/forms/public/${shareableLink}`);
-    console.log(response)
     return response.data;
   } catch (error) {
     console.error('Error getting form data:', error);

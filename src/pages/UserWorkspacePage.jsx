@@ -109,7 +109,7 @@ const UserWorkspacePage = () => {
         setEmail("");
         fetchWorkspaces(); // Refresh shared workspace list
       } else {
-        console.log({ response });
+        // console.log({ response });
         toast.error("Failed to send invitation");
       }
     } catch (error) {
@@ -118,7 +118,7 @@ const UserWorkspacePage = () => {
   };
 
   const handleCopyLink = async ({ workspaceId }) => {
-    console.log({email})
+    // console.log({email})
     try {
       const token = localStorage.getItem("token");
       
@@ -138,7 +138,7 @@ const UserWorkspacePage = () => {
         setEmail("");
         fetchWorkspaces(); // Refresh shared workspace list
       } else {
-        console.log({ response });
+        // console.log({ response });
         toast.error("Failed to send invitation");
       }
     } catch (error) {

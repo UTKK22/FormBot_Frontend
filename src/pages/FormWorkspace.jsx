@@ -26,7 +26,6 @@ const FormWorkspace = () => {
   const folderId = useSelector((state) => state.workspace.folderId);
   const { isDarkMode, toggleTheme } = useTheme();
 
-  console.log({formDetails}, 'formDetails')
   useEffect(() => {
     const fetchFormData = async () => {
       setLoading(true);

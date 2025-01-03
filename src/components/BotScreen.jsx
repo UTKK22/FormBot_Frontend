@@ -36,7 +36,7 @@ const FormDisplay = () => {
 
     fetchData();
   }, [shareableLink]);
-  //  console.log(formDetails)
+  
   useEffect(() => {
     if (formDetails && isChatStarted && currentIndex >= 0) {
       const currentField = formDetails.fields[currentIndex];
@@ -114,7 +114,7 @@ const FormDisplay = () => {
     const isUserInput = entry.type === "userInput";
     const contentClass = isBubble ? styles.bubble : styles.input;
     const labelClass = !isBubble && styles[entry.contentType]; // Dynamic class based on field label
-    console.log(currentField);
+   
     switch (entry.contentType) {
       case "Image":
         return (

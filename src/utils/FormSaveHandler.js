@@ -12,7 +12,7 @@ export const handleSave = async (formDetails, fields, folderId, setFormId, dispa
     }
 
     const formLink = `${window.location.origin}/forms/public/${savedFormId}`;
-    console.log(`Form link: ${formLink}`);
+    // console.log(`Form link: ${formLink}`);
 
     const shareResponse = await shareFormToServer({ _id: savedFormId });
     const shareableLink = shareResponse.data.shareableLink;

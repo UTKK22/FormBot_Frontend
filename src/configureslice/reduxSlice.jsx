@@ -13,7 +13,6 @@ const authSlice = createSlice({
         state.isAuthenticated = action.payload;
       },
       setCurrentUser(state, action) {
-        console.log(action.payload);
         state.currentUser = action.payload;
       },
     },

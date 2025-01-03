@@ -16,7 +16,7 @@ const FormList = ({ onClearFolder }) => {
   const navigate = useNavigate();
   const {isDarkMode} =useTheme();
   const handleDeleteClick = (formId) => {
-    console.log(formId)
+    
     setSelectedFormId(formId);
     setIsModalOpen(true);
   };

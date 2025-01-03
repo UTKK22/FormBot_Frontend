@@ -7,7 +7,7 @@ const useFolders = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const { currentUser } = useSelector((state) => state.auth);
-  console.log(currentUser, 'currentUser')
+  
 
   const fetchFolders = useCallback(async () => {
     try {
