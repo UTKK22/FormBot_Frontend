@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+  background: #18181B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0 5px 40px;
+}
+.button_container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .button {
+    color: rgba(255, 255, 255, 0.92);
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16.8px; /* 105% */
+    background-color: transparent;
+    border: none;
+    display: flex;
+    min-width: 32px;
+    padding: 7.1px 10px 7.1px 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    margin-left: 40%;
+  }
+  
+  /* .button div:focus, .button div:active {
+    border: 1px solid #7EA6FF;
+    background-color: transparent;
+    outline: none; /* Remove default outline */
+  
+  
+  .share {
+    width: 65px;
+    height: 25px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #1A5FFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 0.8rem;
+  }
+  
+  .save {
+    width: 65px;
+    height: 25px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: rgba(74, 222, 128, 0.80);
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button > img {
+    cursor: pointer;
+    width: 31px;
+    height: 31px;
+  }
+
+/* AnalyticsPage.module.css */
+
+.analyticsContainer {
+    background-color: #18171C;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    height: 100%;
+
+  }
+  .lightContainer{
+    background-color: white;
+  }
+  .analyticsOverview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    margin: auto;
+    margin-top: 5%;
+    gap: 15%;
+  }
+  
+  .analyticsCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 150px; 
+    padding: 20px;
+    border-radius: 16px;
+    background: #323232;
+  }
+  
+  .analyticsCard p , .completion p{
+    margin: 0;
+    color: #FFF;
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .submissionsTable {
+    min-width: 80%;
+    border-collapse: collapse;
+    margin: auto;
+    margin-top: 5%;
+    overflow: scroll;
+  }
+  
+  .submissionsTable th, .submissionsTable td {
+    border: 1px solid #444;
+    padding:19px 8px;
+    text-align: center;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+  }
+  .lighttable{
+    filter: invert(1);
+  }
+  .submissionsTable th {
+    font-weight: 600;
+  }
+  .completion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 229px; 
+    padding: 20px;
+    border-radius: 16px;
+    background: #323232;
+    height: fit-content;
+  }
